@@ -46,6 +46,13 @@ input.onButtonPressed(Button.B, function () {
 })
 input.onGesture(Gesture.Shake, function () {
     reset()
+    basic.showLeds(`
+        # . . . #
+        . . . . .
+        # . . . #
+        # # # # #
+        . . . . .
+        `)
 })
 function reset () {
     OLED.init(128, 64)
@@ -62,3 +69,10 @@ let ties = 0
 let playerB = 0
 let playerA = 0
 reset()
+basic.showLeds(`
+    # . . . #
+    . . . . .
+    # . . . #
+    # # # # #
+    . . . . .
+    `)
